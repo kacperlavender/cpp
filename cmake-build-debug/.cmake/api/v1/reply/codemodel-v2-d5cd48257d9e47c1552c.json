@@ -1,0 +1,202 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "googletest-master",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-master-Debug-f184eacdd8aa3394ae62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/Users/kacper/Library/CloudStorage/OneDrive-AkademiaGo\u0301rniczo-Hutniczaim.Stanis\u0142awaStaszicawKrakowie/projekty/git/googletest-master"
+				},
+				{
+					"build" : "googletest-master/googlemock",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-master.googlemock-Debug-68f2a4d06f5411b35aef.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/Users/kacper/Library/CloudStorage/OneDrive-AkademiaGo\u0301rniczo-Hutniczaim.Stanis\u0142awaStaszicawKrakowie/projekty/git/googletest-master/googlemock",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "googletest-master/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-master.googletest-Debug-b3dc7deaf975de024c1e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "/Users/kacper/Library/CloudStorage/OneDrive-AkademiaGo\u0301rniczo-Hutniczaim.Stanis\u0142awaStaszicawKrakowie/projekty/git/googletest-master/googletest",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "matlab_m",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gmock",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gtest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "gmock::@007f8d9bf340d4fe6913",
+					"jsonFile" : "target-gmock-Debug-fdab6628d2982dc39724.json",
+					"name" : "gmock",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gmock_main::@007f8d9bf340d4fe6913",
+					"jsonFile" : "target-gmock_main-Debug-42f86de3bdb83bc1fa77.json",
+					"name" : "gmock_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gtest::@f5d8686f3b9b4fbaa54d",
+					"jsonFile" : "target-gtest-Debug-dd05af87fa30eed78802.json",
+					"name" : "gtest",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gtest_main::@f5d8686f3b9b4fbaa54d",
+					"jsonFile" : "target-gtest_main-Debug-18840b7041702901c61a.json",
+					"name" : "gtest_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matlab_m__debug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matlab_m__debug-Debug-b036ecdbb8937770a43a.json",
+					"name" : "matlab_m__debug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matlab_m__test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matlab_m__test-Debug-37ce29411a4b478ab5d8.json",
+					"name" : "matlab_m__test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/kacper/Library/CloudStorage/OneDrive-AkademiaGo\u0301rniczo-Hutniczaim.Stanis\u0142awaStaszicawKrakowie/projekty/git/matlab/matlab-main/cmake-build-debug",
+		"source" : "/Users/kacper/Library/CloudStorage/OneDrive-AkademiaGo\u0301rniczo-Hutniczaim.Stanis\u0142awaStaszicawKrakowie/projekty/git/matlab/matlab-main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
