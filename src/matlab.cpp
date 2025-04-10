@@ -6,6 +6,10 @@
 #include <vector>
 
 std::vector<int> add_vectors(MatVect& v1, MatVect& v2) {
+    if (v1.size() != v2.size()) {
+        return std::vector<int>();
+    }
+
     std::vector<int> result(v1.size());
     std::transform(v1.begin(), v1.end(), v2.begin(), result.begin(), std::plus<int>());
     return result;
@@ -20,16 +24,22 @@ void print_vector(int* v, std::size_t n) {
 
 MatVect::MatVect(std::size_t n) : v_(n, 0), size_(n) {}
 
-void MatVect::get_elem(std::size_t pos) const {
-    std::cout << v_[pos] << std::endl;
+int MatVect::get_elem(std::size_t pos) const {
+    if (pos >= size_) {
+        throw std::out_of_range("indeks poza zakresem");
+    }
+    return v_[pos];
 }
-
 
 std::size_t MatVect::size() const {
     return size_;
 }
 
 void MatVect::set_elem(std::size_t pos, int val) {
+    if (pos >= size_) {
+        throw std::out_of_range("indeks poza zakesem");
+    }
+
     v_[pos] = val;
 }
 
