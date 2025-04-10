@@ -42,3 +42,4 @@ double MatVect::norm() const {
         sum += v_[i] * v_[i];
     }
     return std::sqrt(sum);
+}
