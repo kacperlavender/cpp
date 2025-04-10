@@ -12,6 +12,9 @@ public:
     MatVect(std::size_t n);
     MatVect(const std::vector<int>& v) : v_(v), size_(v.size()) {} // Dodano inicjalizację size_
 
+    int& operator[](std::size_t pos);
+    const int& operator[](std::size_t pos) const;
+
     int get_elem(std::size_t pos) const;
 
     void set_elem(std::size_t pos, int val);

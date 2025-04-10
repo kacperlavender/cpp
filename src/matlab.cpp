@@ -15,16 +15,16 @@ std::vector<int> add_vectors(MatVect& v1, MatVect& v2) {
     return result;
 }
 
-
-void print_vector(int* v, std::size_t n) {
-    for (std::size_t i = 0; i < n; i++) {
-        std::cout << v[i] << " ";
-    }
-}
-
 MatVect::MatVect(std::size_t n) : v_(n, 0), size_(n) {}
 
-int MatVect::get_elem(std::size_t pos) const {
+int& MatVect::operator[](std::size_t pos) {
+    if (pos >= size_) {
+        throw std::out_of_range("indeks poza zakresem");
+    }
+    return v_[pos];
+}
+
+const int& MatVect::operator[](std::size_t pos) const {
     if (pos >= size_) {
         throw std::out_of_range("indeks poza zakresem");
     }

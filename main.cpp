@@ -15,9 +15,9 @@ int main() {
     std::cout << std::endl;
 
     MatVect vec(3);
-    vec.set_elem(0, 10);
-    vec.set_elem(1, 20);
-    vec.set_elem(2, 30);
+    vec[0] = 10;
+    vec[1] = 20;
+    vec[2] = 30;
 
     std::cout << "\nNorma wektora: " << vec.norm() << std::endl;
 
