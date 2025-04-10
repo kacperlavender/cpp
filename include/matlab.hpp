@@ -2,17 +2,16 @@
 #define INCLUDE_MATLAB_HPP_
 #include <cstddef>
 #include <iostream>
-
-int* add_vectors(int* v1, int* v2, std::size_t n);
-
-void print_vector(int* v, std::size_t n);
+#include <vector>
 
 class MatVect {
-    int * v_;
+    std::vector<int> v_;
     std::size_t size_;
 
 public:
     MatVect(std::size_t n);
+    MatVect(const std::vector<int>& v) : v_(v), size_(v.size()) {} // Dodano inicjalizację size_
+
 
     void get_elem(std::size_t pos) const;
 
@@ -22,6 +21,18 @@ public:
 
     double norm() const;
 
+    std::string to_string(std::vector<int> v) const;
+
+    std::vector<int>::iterator begin() { return v_.begin(); }
+
+    std::vector<int>::iterator end() { return v_.end(); }
+
+    std::vector<int>::const_iterator cbegin() const { return v_.cbegin(); }
+
+    std::vector<int>::const_iterator cend() const { return v_.cend(); }
 };
+
+std::vector<int> add_vectors(MatVect& v1, MatVect& v2);
+
 
 #endif /* INCLUDE_MATLAB_HPP_ */
